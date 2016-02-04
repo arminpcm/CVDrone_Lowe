@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64DC40E8-1192-4D14-AFD6-46ED67C7197E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CVDrone_Lowe</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Libraries\OpenCV\2.4.10\build\install\include;.\src\3rdparty\pthread\include;.\src\3rdparty\ffmpeg\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\OpenCV\2.4.10\build\install\x64\vc11\lib;.\src\3rdparty\pthread\lib\x64;.\src\3rdparty\ffmpeg\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Libraries\OpenCV\2.4.10\build\install\include;.\src\3rdparty\pthread\include;.\src\3rdparty\ffmpeg\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\OpenCV\2.4.10\build\install\x64\vc11\lib;.\src\3rdparty\pthread\lib\x64;.\src\3rdparty\ffmpeg\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\opencv\2.4.9\include;.\src\3rdparty\pthread\include;.\src\3rdparty\ffmpeg\include;.\src\3rdparty\devil\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\opencv\2.4.9\x86\vc10\lib;.\src\3rdparty\pthread\lib;.\src\3rdparty\ffmpeg\lib;.\src\3rdparty\devil\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\src\3rdparty\pthread\include;.\src\3rdparty\ffmpeg\include;C:\Libraries\OpenCV\2.4.10\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\src\3rdparty\pthread\lib\x64;.\src\3rdparty\ffmpeg\lib;C:\Libraries\OpenCV\2.4.10\build\install\x64\vc11\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;__STDC_CONSTANT_MACROS;SIFTGPU_NO_DEVIL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wsock32.lib;Winmm.lib;pthreadVC2.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;opencv_core249d.lib;opencv_gpu249d.lib;opencv_highgui249d.lib;opencv_nonfree249d.lib;opencv_imgproc249d.lib;opencv_features2d249d.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;SIFTGPU_NO_DEVIL;_DEBUG;_CONSOLE;__STDC_CONSTANT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wsock32.lib;Winmm.lib;pthreadVC2.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;opengl32.lib;glu32.lib;opencv_core2410d.lib;opencv_gpu2410d.lib;opencv_highgui2410d.lib;opencv_nonfree2410d.lib;opencv_imgproc2410d.lib;opencv_features2d2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__STDC_CONSTANT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wsock32.lib;DevIL.lib;OpenGL32.lib;Winmm.lib;pthreadVC2.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;opencv_core249.lib;opencv_gpu249.lib;opencv_highgui249.lib;opencv_nonfree249.lib;opencv_imgproc249.lib;opencv_features2d249.lib;cuda.lib;cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;SIFTGPU_NO_DEVIL;NDEBUG;_CONSOLE;__STDC_CONSTANT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\opencv\2.4.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wsock32.lib;Winmm.lib;pthreadVC2.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;opengl32.lib;glu32.lib;opencv_core2410.lib;opencv_gpu2410.lib;opencv_highgui2410.lib;opencv_nonfree2410.lib;opencv_imgproc2410.lib;opencv_features2d2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\opencv\2.4.9\x64\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AffineEstimation.cpp" />
+    <ClCompile Include="src\ardrone\ardrone.cpp" />
+    <ClCompile Include="src\ardrone\command.cpp" />
+    <ClCompile Include="src\ardrone\config.cpp" />
+    <ClCompile Include="src\ardrone\navdata.cpp" />
+    <ClCompile Include="src\ardrone\tcp.cpp" />
+    <ClCompile Include="src\ardrone\udp.cpp" />
+    <ClCompile Include="src\ardrone\version.cpp" />
+    <ClCompile Include="src\ardrone\video.cpp" />
+    <ClCompile Include="src\Draw.cpp" />
+    <ClCompile Include="src\houghT.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\parallel_pipeline.cpp" />
+    <ClCompile Include="src\quadrotor_pipeline.cpp" />
+    <ClCompile Include="src\SiftGPU\CLTexImage.cpp" />
+    <ClCompile Include="src\SiftGPU\CuTexImage.cpp" />
+    <ClCompile Include="src\SiftGPU\FrameBufferObject.cpp" />
+    <ClCompile Include="src\SiftGPU\GlobalUtil.cpp" />
+    <ClCompile Include="src\SiftGPU\GLTexImage.cpp" />
+    <ClCompile Include="src\SiftGPU\gl_core_3_0.c" />
+    <ClCompile Include="src\SiftGPU\ProgramCG.cpp" />
+    <ClCompile Include="src\SiftGPU\ProgramCL.cpp" />
+    <ClCompile Include="src\SiftGPU\ProgramGLSL.cpp" />
+    <ClCompile Include="src\SiftGPU\ProgramGPU.cpp" />
+    <ClCompile Include="src\SiftGPU\PyramidCL.cpp" />
+    <ClCompile Include="src\SiftGPU\PyramidCU.cpp" />
+    <ClCompile Include="src\SiftGPU\PyramidGL.cpp" />
+    <ClCompile Include="src\SiftGPU\ShaderMan.cpp" />
+    <ClCompile Include="src\SiftGPU\SiftGPU.cpp" />
+    <ClCompile Include="src\SiftGPU\SiftMatch.cpp" />
+    <ClCompile Include="src\SiftGPU\SiftMatchCU.cpp" />
+    <ClCompile Include="src\SiftGPU\SiftPyramid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AffineEstimation.h" />
+    <ClInclude Include="src\ardrone\ardrone.h" />
+    <ClInclude Include="src\ardrone\uvlc.h" />
+    <ClInclude Include="src\Draw.h" />
+    <ClInclude Include="src\houghT.h" />
+    <ClInclude Include="src\parallel_pipeline.h" />
+    <ClInclude Include="src\quadrotor_pipeline.h" />
+    <ClInclude Include="src\SiftGPU\CLTexImage.h" />
+    <ClInclude Include="src\SiftGPU\CuTexImage.h" />
+    <ClInclude Include="src\SiftGPU\FrameBufferObject.h" />
+    <ClInclude Include="src\SiftGPU\GlobalUtil.h" />
+    <ClInclude Include="src\SiftGPU\GLTexImage.h" />
+    <ClInclude Include="src\SiftGPU\gl_core_3_0.h" />
+    <ClInclude Include="src\SiftGPU\LiteWindow.h" />
+    <ClInclude Include="src\SiftGPU\ProgramCG.h" />
+    <ClInclude Include="src\SiftGPU\ProgramCL.h" />
+    <ClInclude Include="src\SiftGPU\ProgramCU.h" />
+    <ClInclude Include="src\SiftGPU\ProgramGLSL.h" />
+    <ClInclude Include="src\SiftGPU\ProgramGPU.h" />
+    <ClInclude Include="src\SiftGPU\PyramidCL.h" />
+    <ClInclude Include="src\SiftGPU\PyramidCU.h" />
+    <ClInclude Include="src\SiftGPU\PyramidGL.h" />
+    <ClInclude Include="src\SiftGPU\ShaderMan.h" />
+    <ClInclude Include="src\SiftGPU\SiftGPU.h" />
+    <ClInclude Include="src\SiftGPU\SiftMatch.h" />
+    <ClInclude Include="src\SiftGPU\SiftMatchCU.h" />
+    <ClInclude Include="src\SiftGPU\SiftPyramid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\SiftGPU\ProgramCU.cu">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

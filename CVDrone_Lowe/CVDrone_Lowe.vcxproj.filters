@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\AffineEstimation.cpp" />
+    <ClCompile Include="src\Draw.cpp" />
+    <ClCompile Include="src\houghT.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ardrone\ardrone.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\command.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\config.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\navdata.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\tcp.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\udp.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\version.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ardrone\video.cpp">
+      <Filter>ardrone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\CLTexImage.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\FrameBufferObject.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\GlobalUtil.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\GLTexImage.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\ProgramCG.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\ProgramCL.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\ProgramGLSL.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\ProgramGPU.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\PyramidCL.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\PyramidGL.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\ShaderMan.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\SiftPyramid.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\gl_core_3_0.c">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\PyramidCU.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\SiftGPU.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\SiftMatchCU.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\CuTexImage.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SiftGPU\SiftMatch.cpp">
+      <Filter>siftgpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parallel_pipeline.cpp" />
+    <ClCompile Include="src\quadrotor_pipeline.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AffineEstimation.h" />
+    <ClInclude Include="src\Draw.h" />
+    <ClInclude Include="src\houghT.h" />
+    <ClInclude Include="src\ardrone\ardrone.h">
+      <Filter>ardrone</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ardrone\uvlc.h">
+      <Filter>ardrone</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ProgramCU.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\SiftGPU.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\CLTexImage.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\CuTexImage.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\FrameBufferObject.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\GlobalUtil.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\GLTexImage.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\LiteWindow.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ProgramCG.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ProgramCL.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ProgramGLSL.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ProgramGPU.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\PyramidCL.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\PyramidCU.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\PyramidGL.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\ShaderMan.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\SiftMatch.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\SiftMatchCU.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\SiftPyramid.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SiftGPU\gl_core_3_0.h">
+      <Filter>siftgpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parallel_pipeline.h" />
+    <ClInclude Include="src\quadrotor_pipeline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ardrone">
+      <UniqueIdentifier>{7a527936-895a-4db6-a640-5ddeb86930b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="siftgpu">
+      <UniqueIdentifier>{258a2800-c350-4fe9-a1ab-a668d2ece473}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\SiftGPU\ProgramCU.cu">
+      <Filter>siftgpu</Filter>
+    </None>
+  </ItemGroup>
+</Project>
